@@ -1,0 +1,4 @@
+
+    [ckan.plugins]
+	socrata_harvest=socrata.unplugged.ckan:SocrataHarvester
+	
