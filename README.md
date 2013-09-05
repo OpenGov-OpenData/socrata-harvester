@@ -58,10 +58,10 @@ If PasteDeploy reports error, for example: "module has no converters attribute",
     python setup.py develop
 
 Make sure PasteDeploy works fine in python command line:    
-    ```
-    >>> import paste.deploy    
-    >>> import paste.deploy.converters    
-    ```
+
+    import paste.deploy    
+    import paste.deploy.converters    
+
 
 Running 
 ------------
@@ -111,4 +111,4 @@ In CKAN portal, there should be datasets(About 700 more) imported
 Contact
 ------------
 
-Any question/issue/discussion please Email: aziz.igam@ontodia.com
+aziz.igam@ontodia.com
