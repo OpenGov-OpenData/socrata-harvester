@@ -26,7 +26,7 @@ socrata_harvester plugin as a plugin.  E.g.
 
 [Note]
 
-If error occurred, you may need to install other required packages
+If error occurred, you may need to install other required packages    
 
 For pylons package, do following:   
     sudo easy_install pylons
@@ -35,10 +35,10 @@ For pylons package, do following:
 Using
 ------------
 
-After setting this up, you should be able to go to:
+After setting this up, you should be able to go to:    
     http://localhost:5000/harvest
 
-And have a new "Socrata" harvest type show up when creating sources.
+And have a new "Socrata" harvest type show up when creating sources.    
     http://localhost:5000/harvest/new
 
 [Note]
@@ -56,9 +56,9 @@ If PasteDeploy reports error, for example: "module has no converters attribute",
     cd /usr/lib/ckan/default/local/lib/python2.7/site-packages/paste/deploy/PasteDeploy-1.5.0/
     python setup.py develop
 
-Make sure PasteDeploy works fine in python command line:
-    >>> import paste.deploy
-    >>> import paste.deploy.converters
+Make sure PasteDeploy works fine in python command line:    
+    >>> import paste.deploy    
+    >>> import paste.deploy.converters    
 
 
 Running 
