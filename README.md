@@ -69,25 +69,35 @@ In adding new sources page, select Socrata as source type, and fill URL as https
 Now we follow CKAN Harvester process to create run harvest jobs
 
 1. Create job to the source. In command line, do:
-    # paster --plugin=ckanext-harvest harvester sources --config=/etc/ckan/default/production.ini
-    Source id: YOUR-SOURCE-ID
-          url: https://nycopendata.socrata.com/
-         type: None
-       active: True
-    owner org: None
-    frequency: MANUAL
-         jobs: 0
-
-    # paster --plugin=ckanext-harvest harvester job YOUR-SOURCE-ID --config=/etc/ckan/default/production.ini
+    ```
+    paster --plugin=ckanext-harvest harvester sources --config=/etc/ckan/default/production.ini
+    ```
+    Source id: YOUR-SOURCE-ID    
+          url: https://nycopendata.socrata.com/    
+         type: None    
+       active: True    
+    owner org: None    
+    frequency: MANUAL    
+         jobs: 0    
+    
+    ```
+    paster --plugin=ckanext-harvest harvester job YOUR-SOURCE-ID --config=/etc/ckan/default/production.ini
+    ```
 
 2. Start gather_consumer job. In command line, do:
-    # paster --plugin=ckanext-harvest harvester gather_consumer --config=/etc/ckan/default/production.ini
+    ```
+    paster --plugin=ckanext-harvest harvester gather_consumer --config=/etc/ckan/default/production.ini
+    ```
 
 3. Start fetch_consumer job. In 2nd command line, do:
-    # paster --plugin=ckanext-harvest harvester fetch_consumer --config=/etc/ckan/default/production.ini
+    ```
+    paster --plugin=ckanext-harvest harvester fetch_consumer --config=/etc/ckan/default/production.ini
+    ```
 
 4. Start running job. In 3rd command line, do:
-    # paster --plugin=ckanext-harvest harvester run --config=/etc/ckan/default/production.ini
+    ```
+    paster --plugin=ckanext-harvest harvester run --config=/etc/ckan/default/production.ini
+    ```
 
 
 See Results
