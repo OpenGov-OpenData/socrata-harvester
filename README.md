@@ -29,6 +29,7 @@ socrata_harvester plugin as a plugin.  E.g.
 If error occurred, you may need to install other required packages    
 
 For pylons package, do following:   
+    
     sudo easy_install pylons
 
 
@@ -57,9 +58,10 @@ If PasteDeploy reports error, for example: "module has no converters attribute",
     python setup.py develop
 
 Make sure PasteDeploy works fine in python command line:    
+    ```
     >>> import paste.deploy    
     >>> import paste.deploy.converters    
-
+    ```
 
 Running 
 ------------
