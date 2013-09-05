@@ -89,12 +89,12 @@ Now we follow CKAN Harvester process to create run harvest jobs
     paster --plugin=ckanext-harvest harvester gather_consumer --config=/etc/ckan/default/production.ini
     ```
 
-3. Start fetch_consumer job. In 2nd command line, do:
+3. Start fetch_consumer job. Open 2nd command line, do:
     ```
     paster --plugin=ckanext-harvest harvester fetch_consumer --config=/etc/ckan/default/production.ini
     ```
 
-4. Start running job. In 3rd command line, do:
+4. Start running job. Open 3rd command line, do:
     ```
     paster --plugin=ckanext-harvest harvester run --config=/etc/ckan/default/production.ini
     ```
